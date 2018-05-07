@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
       String s2 = cursor.getString(2);
       long itemId = cursor.getLong(
               cursor.getColumnIndexOrThrow(FeedReaderContract.FeedEntry._ID));
-      itemIds.add(itemId);
+      itemIds.add(s2);
     }
     cursor.close();
     return itemIds.toString();
